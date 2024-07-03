@@ -5,9 +5,8 @@
 ##### Also, a pure function does not produce any observable side effects such as network requests or data mutation, etc.
 
 #### JavaScript Pure Function example:
-
+##### examples : addition function, square function, array mapping function, filtering, string Concatenation, factorial function.
 ```javascript
-// examples : addition function, square function, array mapping function, filtering, string Concatenation, factorial function.
 1. function add(a,b){
     return a+b
 }
@@ -33,9 +32,8 @@
 ```
 
 #### JavaScript ImPure Function example:
-
+##### Modifying External State, Random Number Generator, Fetching Data from an API, Date and Time Function.
 ```javascript
-// Modifying External State, Random Number Generator, Fetching Data from an API, Date and Time Function
 1. let count = 0;
 function increment() {
   count += 1;
@@ -53,7 +51,7 @@ console.log(generateRandomNumber());
   const data = await response.json();
   return data;
 }
-//The function fetchData interacts with an external API, making it dependent on the external environment and hence impure.
+// The function fetchData interacts with an external API, making it dependent on the external environment and hence impure.
 
 4. function getCurrentDate() {
   return new Date();
@@ -64,5 +62,6 @@ console.log(generateRandomNumber());
   return message;
 }
 logMessage('Hello');
-// if a function uses console.log inside it, the function is considered impure. This is because console.log causes a side effect by performing an I/O operation, interacting with the external environment (i.e., the console).
+// 
 ```
+**NOTE : if a function uses console.log inside it, the function is considered impure. This is because console.log causes a side effect by performing an I/O operation, interacting with the external environment (i.e., the console)**
