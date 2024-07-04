@@ -1,11 +1,11 @@
 ## Pure Functions in JavaScript.
 
-##### A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed. It does not depend on any state or data change during a program’s execution. Rather, it only depends on its input arguments.
+A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed. It does not depend on any state or data change during a program’s execution. Rather, it only depends on its input arguments.
 
-##### Also, a pure function does not produce any observable side effects such as network requests or data mutation, etc.
+Also, a pure function does not produce any observable side effects such as network requests or data mutation, etc.
 
 #### JavaScript Pure Function example:
-##### examples : addition function, square function, array mapping function, filtering, string Concatenation, factorial function.
+ **examples :** addition function, square function, array mapping function, filtering, string Concatenation, factorial function.
 ```javascript
 1. function add(a,b){
     return a+b
@@ -32,7 +32,7 @@
 ```
 
 #### JavaScript ImPure Function example:
-##### Modifying External State, Random Number Generator, Fetching Data from an API, Date and Time Function.
+**examples :** Modifying External State, Random Number Generator, Fetching Data from an API, Date and Time Function.
 ```javascript
 1. let count = 0;
 function increment() {
@@ -64,4 +64,4 @@ console.log(generateRandomNumber());
 logMessage('Hello');
 // 
 ```
-**NOTE : if a function uses console.log inside it, the function is considered impure. This is because console.log causes a side effect by performing an I/O operation, interacting with the external environment (i.e., the console)**
+NOTE : if a function uses console.log inside it, the function is considered impure. This is because console.log causes a side effect by performing an I/O operation, interacting with the external environment (i.e., the console)
