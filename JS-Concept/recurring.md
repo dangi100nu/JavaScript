@@ -7,6 +7,7 @@
 >
 > **Example :**
 > setInterval, for loops, repeated event handling, polling with setTimeout.
+> 
 > Implemented using constructs like loops (for, while), intervals (setInterval), and event listeners.
 
 ##### 1. Set Intervals:
@@ -128,13 +129,17 @@ function fibonacci(n){
 console.log(fibonacci(10))
 ```
 
-**important** The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The sequence begins as follows:
+**important:**
+> The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The sequence begins as follows:
+> 
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
 Definition and Formula
 The Fibonacci sequence is defined recursively as:
 F(0)=0
 F(1)=1
 F(n)=F(n-1) + F(n-2) for n>1
+
 This means that the nth Fibonacci number 𝐹(𝑛) is the sum of the (n-1)th and (n-2)th Fibonacci numbers.
 
 
